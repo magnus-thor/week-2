@@ -1,1 +1,5 @@
-my_group = [hash_1:{name: "person_1", gender: "male", age: 31}, hash_2:{name: "person_2", gender: "female", age: 34}, hash_3:{name: "person_3", gender: "male", age: 49}]
+my_group = [
+  person_1 = {name: "Jimmy", gender: "man", age: 31}, 
+  person_2 = {name: "Anna", gender: "woman", age: 34}, 
+  person_3 = {name: "Billy", gender: "man", age: 49}
+  ]
