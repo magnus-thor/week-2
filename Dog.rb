@@ -1,13 +1,13 @@
 class Dog
   attr_accessor :breed, :name
 
-  def initialize(breed, name)
+  def initialize(name, breed)
     @breed = breed
     @name = name
   end
   
   def wag_tail
-    puts "#{@name} wags his tail"
+    puts "#{@name} wags his tail excitedly at the mention of his name"
   end
   
   def barks(stranger)
@@ -15,8 +15,13 @@ class Dog
   end
 end
 
-snati = Dog.new 'Terrier', 'Snati'
+puts "What is your dog called?"
+name = gets.chomp
+puts "What type of breed is he?"
+breed = gets.chomp
 
-snati.wag_tail
-snati.barks('postman')
+dog = Dog.new name, breed
+
+dog.wag_tail
+dog.barks('postman')
 
